@@ -1,0 +1,419 @@
+@import url('https://rsms.me/inter/inter.css');
+@font-face {
+    font-family: "varela-round";
+    src: url(../CSS/FONTS/Varela_Round/VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: "SFProDisplay-heavy";
+    src: url(../CSS/FONTS/San_Francisco/SFProDisplay-Heavy.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+/*  HEADER STARTS */
+
+header {            
+    height: 73px;
+    border-bottom: solid 1px #f0f2f5;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        /* centers the flex-container */
+}
+
+.flex-container {
+    display: flex;
+    flex-basis: 65%;                /* sets itself to 65% of the wrapper */
+}
+
+.header-content {
+    justify-content: space-between;
+    align-items: center;            /* vertically aligns the content inside header */
+}
+
+.brand-intro h1 {
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "varela-round", serif;     /* CircularStd alternative*/
+    color: #02c378;
+}
+
+.brand-intro p {                              /* width: 2px wider due to the usage of varela font */
+    height: 13px;
+    font-size: 10px;
+    font-family: "varela-round", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a5b5af;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.right-nav > div {
+    padding: 10px 20px;
+}
+
+.departments {
+    font-size: 13px;
+    font-weight: 500;
+    color: #777b86;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.departments i {
+    width: 5px;
+    font-size: 8px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 162.3px;
+    height: 38.1px;
+    border-radius: 19.1px;
+    background-color: #02c378;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-family: "varela-round", serif;
+    box-shadow: 0px 4px 18px rgb(230, 227, 227);
+    cursor: pointer;
+}
+
+#shopping-cart {
+    width: 40px;
+}
+
+.submit-button .order-text {
+    font-size: 13.2px;
+    width: 92px;
+}
+
+#shopping-cart-div {
+    position: relative;
+}
+
+#order-count {
+    width: 8.1px;
+    height: 8.1px;
+    position: absolute;
+    top: 52%;
+    left: 63%;
+    color: #02c378;
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chevron-right {
+    margin: 0 11.7px 0 0;
+    font-size: 10px;
+}
+
+/*  HEADER ENDS  */
+
+
+/*  CATEGORY STARTS */
+
+.food-categories {
+    height: 180px;
+}
+
+.food-category {
+    justify-content: space-between;
+}
+
+.category-properties {
+    display:flex;
+    flex-direction: column;
+    margin-top: auto            /* aligns divs to the end of the container */
+}
+
+.category-image {
+    margin-bottom: 10px;
+}
+
+.category-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #02c378;
+    border: 1px solid #f0f2f5;
+    text-align: center;
+    padding: 16px;
+}
+
+.category-name {
+    margin-bottom: 1px;
+}
+
+.category-name h1 {
+    width: 143px;
+    height: 41px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #191919;
+    font-family: "SFProDisplay-heavy", sans-serif;
+}
+
+.article-count p {
+    width: 84px;
+    height: 16px;
+    color: #a7adb9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.product-sorting {
+    margin-top: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #a7adb9;
+}
+
+.product-sorting select {
+    appearance: none;
+    -webkit-appearance:none; 
+    -moz-appearance:none; 
+    -ms-appearance:none;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: #a7adb9;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    text-align-last:end;
+}
+
+.product-sorting i {
+    width: 8px;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: start;
+}
+
+/* PRODUCTS START */
+
+.products {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    flex-basis: 24%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 0 0 0;
+}
+
+.product-image img {
+    display: block;
+    width: 167px;
+    margin: auto;
+}
+
+.product-price {
+    margin-top: 21.3px;
+    font-size: 14px;
+}
+
+.product-price .price-number {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1b1c;
+}
+
+.product-description {
+    height: 46px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #525459;
+    text-align: center;
+    line-height: 20px;
+}
+
+.product-category-weight {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #a7adb9;
+}
+
+.product-category-weight span {
+    font-weight: normal;
+}
+
+.add-product {
+    margin-top: 10px;
+}
+
+.add-product .add-button {
+    border: none;
+    background: none;
+    outline: none;
+}
+.add-product .add-button img {
+    color: #02c378;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.add-product .add-button img:hover {
+    transform: scale(1.5);
+}
+
+.show-more-div {
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 61px;
+}
+
+.show-more-button {
+    width: 167px;
+    background: none;
+    border: solid 1.2px #f0f2f5;
+    border-radius: 21.5px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a7adb9;
+    outline: none;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    height: 107px;
+    border-top: solid 1px #f0f2f5;
+}
+
+.footer-content {
+    justify-content: space-between;
+}
+
+.brand-name {
+    flex-basis: 87px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-name h1 {
+    height: 25px;
+    font-size: 20px;
+    color: #959595;
+    font-family: "varela-round", serif;
+    font-weight: bold;
+}
+
+.brand-name p {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "varela-round", serif;
+    color: #959595;
+    text-transform: uppercase;
+}
+
+.footer-anchors {
+    flex-basis: 477px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-anchors a {
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    color: #a7adb9;
+}
+
+@media only screen and (max-width: 894px) {
+    footer {
+        height: 160px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .brand-name {
+        align-self: center;
+    }
+
+    .brand-name div h1 {
+        text-align: center;
+    }
+
+    .footer-anchors {
+        flex-basis: 100px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .brand-intro {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header {
+        height: 110px;
+    }
+
+    .right-nav {
+        justify-content: space-between;
+    }
+
+    .footer-anchors {
+        flex-direction: column;
+        flex-basis: 150px;
+    }
+
+    .footer-anchor {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 531px) {
+    header {
+        height: 160px;
+    }
+    .right-nav {
+        flex-direction: column-reverse;
+    }
+
+    .food-category {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
